@@ -2,3 +2,5 @@
 **/obj/
 
 .idea
+
+**/Root/internal_logs/internallog.txt
