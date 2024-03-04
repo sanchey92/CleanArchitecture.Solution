@@ -1,3 +1,4 @@
+using Domain.Entity;
 using Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +16,22 @@ public sealed class ApplicationDbContext : DbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
     }
+
+    /// <summary>
+    /// Gets or sets the collection of products.
+    /// </summary>
+    public DbSet<Product> Products { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the collection of product types.
+    /// </summary>
+    public DbSet<ProductType> ProductTypes { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the collection of product brands.
+    /// </summary>
+    public DbSet<ProductBrand> ProductBrands { get; set; } = null!;
+
 
     /// <summary>
     /// Configures the model using the fluent API. This method is called for each instance of the context
