@@ -5,8 +5,8 @@ namespace Application.RequestFeatures;
 /// </summary>
 public abstract class RequestParameters
 {
-    private const int MaxPageSize = 50;
-    private int _pageSize = 10;
+    private const int MaxPageSize = 10;
+    private int _pageSize = 3;
 
     /// <summary>
     /// Gets or sets the page index.

@@ -13,9 +13,9 @@ public sealed class PagedList<T> : List<T> where T : class
     /// <param name="count">The total count of items across all pages.</param>
     /// <param name="currentPage">The current page index.</param>
     /// <param name="pageSize">The number of items per page.</param>
-    public PagedList(IEnumerable<T> items, int count, int currentPage, int pageSize)
+    public PagedList(int count, int currentPage, int pageSize, IEnumerable<T> items)
     {
-        MetaData = new MetaData(count, pageSize, currentPage);
+        MetaData = new MetaData(currentPage,pageSize, count);
         AddRange(items);
     }
 

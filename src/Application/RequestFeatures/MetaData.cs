@@ -23,22 +23,22 @@ public sealed class MetaData
     /// <summary>
     /// Gets the current page number.
     /// </summary>
-    public int CurrentPage { get; init; }
+    public int CurrentPage { get; set; }
 
     /// <summary>
     /// Gets the total number of pages.
     /// </summary>
-    public int TotalPages { get; init; }
+    public int TotalPages { get; set; }
 
     /// <summary>
     /// Gets the size of each page.
     /// </summary>
-    public int PageSize { get; init; }
+    public int PageSize { get; set; }
 
     /// <summary>
     /// Gets the total number of items.
     /// </summary>
-    public int TotalCount { get; init; }
+    public int TotalCount { get; set; }
 
     /// <summary>
     /// Gets a value indicating whether there is a previous page.
